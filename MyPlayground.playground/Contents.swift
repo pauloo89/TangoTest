@@ -10,15 +10,15 @@ func checkStrDuplicate(someStr: String, checkStr: String) -> Bool {
 }
 
 var greeting = "Hello, playground test test"
-checkStrDuplicate(someStr: greeting, checkStr: "2")
-checkStrDuplicate(someStr: greeting, checkStr: "ll")
-checkStrDuplicate(someStr: greeting, checkStr: "l")
-checkStrDuplicate(someStr: greeting, checkStr: "p")
-checkStrDuplicate(someStr: greeting, checkStr: "Hello")
-checkStrDuplicate(someStr: greeting, checkStr: "o")
-checkStrDuplicate(someStr: greeting, checkStr: "test")
+checkStrDuplicate(someStr: greeting, checkStr: "2")  // result false
+checkStrDuplicate(someStr: greeting, checkStr: "ll") // result false
+checkStrDuplicate(someStr: greeting, checkStr: "l")  // result true
+checkStrDuplicate(someStr: greeting, checkStr: "p")  // result false
+checkStrDuplicate(someStr: greeting, checkStr: "Hello")  // result false
+checkStrDuplicate(someStr: greeting, checkStr: "o")    // result true
+checkStrDuplicate(someStr: greeting, checkStr: "test") // result true
 
 //Сначала хотел сделать через for но понял что там будет работать только с одной буквой если букв будет больше то проверка не сработает.
 //                                    Поэтому потом попробовал сделать через replacingOccurrences, но такой вариант убирает все совпадения а не только первое.
-//                                    Поэтому нагуглил решение выше
+//                                    Поэтому нагуглил решение
 // на все это ушло около получаса
